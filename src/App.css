@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+.quote{
+  width: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.joke {
+  background: #dadada;
+  padding: 20px 20px 20px 20px;
+  width: 700px;
+  height: 200px;
+  margin-top: 25px;
+  position: relative;
+  display: flex; /* Use flexbox */
+  align-items: center; /* Vertically center the content */
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s; /* Add transition for smooth animation */
+  transform-style: preserve-3d;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.joke:hover{
+  transform: perspective(800px) rotateY(10deg) ; /* Apply the 3D rotation on hover */}
+
+.quote {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  z-index: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.joke img {
+  padding: 20px;
+ 
+}
+
+.App{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.btn{
+  background-color: #a31418;
+  color: #fff;
+  padding: 20px 40px;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px ;
+  margin: 40px 0 0 0 ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn:hover{
+background-color: #fbb04b;
+color: #a31418;
+font-weight: bolder;
+}
+
+.btn:active{
+  transform: scale(0.9);
+}
+
+.joke p {
+  padding: 50px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 auto; /* Center horizontally within the flex container */
+}
+
+
+.Container{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Container h1{
+  margin-top: 60px;
+  text-align: center;
+  color: #fff;
+}
+
+body{
+  background: #1C1018;
 }
