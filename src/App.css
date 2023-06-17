@@ -17,7 +17,7 @@
 }
 
 .joke:hover{
-  transform: perspective(800px) rotateY(10deg) ; /* Apply the 3D rotation on hover */}
+  transform: perspective(800px) rotateY(10bndeg) ; /* Apply the 3D rotation on hover */}
 
 .quote {
   position: absolute;
@@ -82,4 +82,32 @@ font-weight: bolder;
 
 body{
   background: #1C1018;
+}
+
+@media only screen and (max-width: 600px) {
+.joke{
+  width: 300px;
+  overflow: hidden;
+}
+
+.joke p{
+  font-size: 14px;
+  
+}
+
+.chuck{
+  height: 300px;
+}
+
+.Container h1{
+  margin-top: 50px;
+}
+
+.App{
+  height: 75vh;
+}
+
+.quote{
+  width: 20px;
+}
 }
